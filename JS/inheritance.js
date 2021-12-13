@@ -18,4 +18,4 @@ let object2 = {
 object2.__proto__ = object;
 
 object2.getDetail();
-object2.arrow() //8792512587
+object2.arrow() 
