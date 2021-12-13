@@ -1,0 +1,51 @@
+// registration ->
+Method - POST 
+/api/vehicals
+{
+    vehicalNumber,
+    type,
+    amount,
+}
+
+response
+resp.code = 201;
+{
+    vehicalNumber:
+    timeStamp:
+    amount:
+    type:
+}
+
+/api/vehicals/vehicalNumber          //?vehicalNumber='DL90aa'
+Method - GET
+    vehicalNumber
+resp.code = [ Not found, Success 200]
+response
+{
+    isValid: true,
+    vehicalNumber: TS07xxxx
+    type: 'two-way'
+    date:
+}
+
+
+directory
+/api/vehicals/RegisterVehical.js
+/api/vehicals/getVehical.js
+/api/vehicals/ValidateVehical.js
+
+/api/database/dynamodb.js
+/api/constants/constants.js
+
+/api/config/config.js
+
+exports.handler = async (event, context, callback) {
+    const db = AWS.DynamoDb.DocumentClient();
+    const record = await db.Get(tableName);
+}
+
+const mockDynamo = jest.fn().mockImplementationOnce(() => {
+    return Promise.resolve({});
+})
+
+expect()
