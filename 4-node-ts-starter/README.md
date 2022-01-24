@@ -1,18 +1,59 @@
-# Nodejs Starter Project
+# Node.js Starter Project
 
-### Setup manifest 
-- Add node config ``` npm init ```
-- Add typescript config ``` npx tsc --init ```
----
-### Folder structure
+### manifest 
+- add node config ``` npm init ```
+
+### api folder structure
 - create a source folder ``` mkdir src ```
 - folder structure ```mkdir configs controllers dt
 os exceptions http interfaces middlewares models routes services utils```
----
-### Add files
-- create main files in root ``` touch app.ts index.ts server.ts ```
 
-### Setup configs
+### .gitignore
+- node_modules
+- dist
+- coverage
+- .env
+  
+### init files
+- create main files in root ``` touch app.ts index.ts server.ts ```
 ---
-### Install packages
-- Install Express, Typescript, SWC transpiler, Nodemon
+### packages
+- install express, typescript, SWC transpiler
+- Add typescript config ``` npx tsc --init ```
+
+#### node version
+- setup node version ``` node -v > .nvmrc ```
+
+#### eslint 
+- npm i eslint -D
+- configure eslint -> npx eslint --init
+- add .eslintignore /dist
+
+#### prettier
+- install prettier -D
+- add .prettierrc 
+
+#### configure scripts package.json
+- configure scripts section in package.json
+
+#### nodemon
+- ```touch nodemon.json```
+```
+{
+    "watch": [
+        "src",
+        ".env"
+    ],
+    "ext": "js,ts,json",
+    "ignore": [
+        "src/logs/*",
+        "src/**/*.{spec,test}.ts"
+    ],
+    "exec": "ts-node -r tsconfig-paths/register --transpile-only src/server.ts"
+}
+```
+
+#### dotenv 
+
+#### unit testing with jest
+- npm i -D jest ts-jest @types/jest
