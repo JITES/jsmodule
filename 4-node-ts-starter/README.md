@@ -1,10 +1,18 @@
-# Create a Nodejs starter project
+# Nodejs Starter Project
 
-- Create a folder with project name and navigate to that folder in terminal
-- Add typescript config ``` npx tsc --init ```
+### Setup manifest 
 - Add node config ``` npm init ```
-- Create a source folder ``` mkdir src ```
-- Create main files in root ``` touch app.ts index.ts server
-.ts ```
+- Add typescript config ``` npx tsc --init ```
+---
+### Folder structure
+- create a source folder ``` mkdir src ```
 - folder structure ```mkdir configs controllers dt
 os exceptions http interfaces middlewares models routes services utils```
+---
+### Add files
+- create main files in root ``` touch app.ts index.ts server.ts ```
+
+### Setup configs
+---
+### Install packages
+- Install Express, Typescript, SWC transpiler, Nodemon
