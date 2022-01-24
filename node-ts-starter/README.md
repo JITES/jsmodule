@@ -1,4 +1,4 @@
-# Create a nodejs starter project
+# Create a Nodejs starter project
 
 - Create a folder with project name and navigate to that folder in terminal
 - Add typescript config ``` npx tsc --init ```
