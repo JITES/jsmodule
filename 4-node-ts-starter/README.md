@@ -1,4 +1,4 @@
-# Node.js Starter Project
+# Node.js starter project
 
 ### Setup microserivices bootstrap
 
