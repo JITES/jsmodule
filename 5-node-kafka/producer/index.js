@@ -5,8 +5,8 @@ const kafka = new Kafka({
   brokers: ['localhost:9092']
 })
 
-
 const producer = kafka.producer()
+
 const execute = async () => {
 await producer.connect()
 await producer.send({
