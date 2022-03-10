@@ -15,13 +15,14 @@ os exceptions http interfaces middlewares models routes services utils```
 - dist
 - coverage
 - .env
-  
-### init files
-- create main files in root ``` touch app.ts index.ts server.ts ```
----
+
 ### packages
 - install express, typescript, SWC transpiler
 - Add typescript config ``` npx tsc --init ```
+
+### init files
+- create main files in root ``` touch app.ts index.ts server.ts ```
+---
 
 #### node version
 - setup node version ``` node -v > .nvmrc ```
