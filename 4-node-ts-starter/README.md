@@ -6,11 +6,12 @@ How to setup microservice starter project?
 
 ### manifest 
 - add node config ``` npm init ```
+- Add typescript config ``` npx tsc --init ```
+- install ``` npm i @types/node ```
 
 ### api folder structure
 - create a source folder ``` mkdir src ```
-- folder structure ```mkdir configs controllers dt
-os exceptions http interfaces middlewares models routes services utils```
+- folder structure ```mkdir configs controllers dtos exceptions http interfaces middlewares models routes services utils```
 
 ### .gitignore
 - node_modules
@@ -18,11 +19,10 @@ os exceptions http interfaces middlewares models routes services utils```
 - coverage
 - .env
 
-### packages
-- install express, typescript, SWC transpiler
-- Add typescript config ``` npx tsc --init ```
+### install framework packages
+- install express, cors, mongoosem, SWC transpiler
 
-### init files
+### create application files
 - create main files in root ``` touch app.ts index.ts server.ts ```
 ---
 
@@ -35,7 +35,7 @@ os exceptions http interfaces middlewares models routes services utils```
 - add .eslintignore /dist
 
 #### prettier
-- install prettier -D
+- npm install prettier -D
 - add .prettierrc 
 
 #### configure scripts package.json
