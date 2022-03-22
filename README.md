@@ -8,3 +8,4 @@ Multi-threading in Node
 Concurreny and Non-blocking I/O
 Microservices
 
+![alt text](https://github.com/JITES/nodejs-advance/blob/main/node-arch.png)
