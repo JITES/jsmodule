@@ -5,7 +5,7 @@ The NodeJS is a runitime environment. It uses familiar POSIX APIs, rather than a
 
 The general principle is, operations must never block. Node's desire for speed (high concurrency) and efficiency (minimal resource usage) demands the reduction of waste. A waiting process is a wasteful process, especially when waiting for I/O.
  
-
+More..
 
 
 ![alt text](https://github.com/JITES/nodejs-advance/blob/main/node-arch.png)
